@@ -10,7 +10,7 @@ MAX_EXECUTION = 50
 
 #SERVER_IP = '10.1.2.122'
 SERVER_IP = '127.0.0.1'
-CLIENT_PORT = 7302
+CLIENT_PORT = 7304
 SERVER_PORT = 7300
 
 class ClientMachine(Machine):
@@ -22,27 +22,38 @@ class ClientMachine(Machine):
             
         except Exception as e:
             logging.error(f'{self.name} - Error: {e}')
-       
+    
+    def init_message(self):
+        message = """
+            Consult your wished product:
+                help - print this message again
+                list - List all products
+                [productId] - print all info of the especific product\n
+        """
+        print(message)
+
     def task(self):
         port_destination = self.slave_port
 
-        for i in range(0, 10):
+        self.init_message()
+
+        while True:
             try:
+                request = input()
+                
                 self.get_client().init_client_socket()
 
-                time.sleep(5)
-                
-                self.get_client().send_message('Are you work?', port_destination)
+                self.get_client().send_message(request, port_destination)
                 self.listen_response()
             except: 
-                print('Dont working...')
+                print('Invalid request.\n')
             
     def listen_response(self):
         
         resp = self.get_client().client.recv(1024)
         print(resp.decode('utf-8'))
 
-        self.get_client().client.close()
+        #self.get_client().client.close()
         
 def execute_thread(index: int, machine: Machine):
     thread = threading.current_thread()
