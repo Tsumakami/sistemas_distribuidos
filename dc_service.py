@@ -12,12 +12,15 @@ TIMEOUT = 2
 MAX_REQUESTS = 15
 MAX_EXECUTION = 50
 
-#SERVER_IP = '10.1.2.122'
 SERVER_IP = '127.0.0.1'
 SERVER_PORT = 7300
 
 class ServerMachine(Machine):
     product_list_ids: List[str]
+
+    def __init__(self, name, port, slave_port, ip):
+        self.product_list_ids = list()
+        super().__init__(name, port, slave_port, ip)
 
     def execute_machine(self) -> None:
         try:
@@ -39,6 +42,9 @@ class ServerMachine(Machine):
         for product in product_list:
             self.product_list_ids.append(product.productId)
 
+    def get_product_list_ids(self) -> List[str]:
+        return self.product_list_ids
+
     def access_db(self) -> json:
         json_file = open('DB/dc.json', 'r')
         return json.load(json_file)
@@ -50,7 +56,7 @@ class ServerMachine(Machine):
         try:            
             for json_product in json_db:
                 product = namedtuple("Product",  json_product.keys())(*json_product.values())
-                print(product)
+                
                 list_products.append(product)
         except Exception as e:
             logging.error(f'{self.name} - Fail to get product list. Error={e}')
@@ -80,14 +86,20 @@ class ServerMachine(Machine):
 
                 logging.info(f'{self.name} - Processing response: {response.strip()}, result is a produt list.')
 
-                logging.info(f'{self.name} -  send list all products: {(skuId for skuId in product_list)} to addr: {addr}')
+                logging.info(f'{self.name} -  send list all products: {(skuId for skuId in list_products)} to addr: {addr}')
 
                 conn.send('Available Products:\n'.encode('utf-8'))
+
                 for product in list_products:
                     message = f'{product.productId}: {product.productName}\n'
                     conn.send(message.encode('utf-8'))
+
             elif response in self.product_list_ids:
                 product = self.get_product_by_id(response)
+                
+                product_json = json.dumps(product._asdict()) + '\n'
+
+                conn.send(product_json.encode('utf-8'))
 
             elif 'work?' in response:
                 conn.send('Are Working...'.encode('utf-8'))
@@ -110,7 +122,7 @@ class ServerMachine(Machine):
                 logging.info(f'{self.name} - conn{conn}, addr={addr}')
 
                 resp = conn.recv(bytes_recv).decode()
-                is_ok = self.controll_messages(conn, addr, resp)
+                is_ok = self.controll_messages(conn, addr, resp.strip())
 
                 if is_ok is False:
                     logging.info(f'{self.name} - Exit application')

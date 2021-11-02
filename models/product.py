@@ -8,7 +8,7 @@ class Product():
     availableStock: int
     interStateAvailableStock: int
 
-    def __inti__(self, productId, skuId, displayName, 
+    def __init__(self, productId, skuId, displayName, 
         listPrice, salePrice, productName, availableStock, interStateAvailableStock):
         self.productId = productId
         self.skuId = skuId
@@ -17,6 +17,5 @@ class Product():
         self.salePrice = salePrice
         self.productName = productName
         self.availableStock = availableStock
-        self. interStateAvailableStock = interStateAvailableStock
-
-    
+        self.interStateAvailableStock = interStateAvailableStock
+   
