@@ -1,0 +1,319 @@
+10/31/2021 10:34:09 PM: INFO: Server - Start thread.
+10/31/2021 10:34:09 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 10:34:51 PM: INFO: Server - Start thread.
+10/31/2021 10:34:51 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 10:35:11 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 59020)>, addr=('127.0.0.1', 59020)
+10/31/2021 10:35:15 PM: INFO: Server - Receiving message: list
+10/31/2021 10:35:15 PM: INFO: Server - Processing response: list, result: [{'EL00002652': {'salePriceWithCashDiscount': 0, 'lastInstallment': 60, 'onSale': False, 'weight': 0, 'quantityInstallment': 2, 'disableBoxDiscount': False, 'parentProducts': '[product:EL00002652]', 'onlineOnly': False, 'type': 'sku', 'productId': 'EL00002652', 'customAttributes': {}, 'discountable': True, 'modelSymphony': '1000214536', 'availableStock': 624, 'interstateAvailableStock': 299, 'listPrice': 120, 'nonreturnable': False, 'additionalShippingTime': 0, 'skuId': 'EL00002652', 'salePrice': 120, 'displayName': 'EL00002652', 'allowedAttributes': '[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]', 'omsAvailableStock': 901, 'productName': 'Pingente Life Nossa Senhora Aparecida '}}, {'EL00047960': {'salePriceWithCashDiscount': 0, 'lastInstallment': 84, 'onSale': False, 'weight': 0, 'quantityInstallment': 1, 'disableBoxDiscount': False, 'parentProducts': '[product:EL00047960]', 'onlineOnly': False, 'type': 'sku', 'productId': 'EL00047960', 'customAttributes': {}, 'discountable': True, 'modelSymphony': '1000128464', 'availableStock': 0, 'interstateAvailableStock': 55, 'listPrice': 120, 'nonreturnable': False, 'additionalShippingTime': 0, 'skuId': 'EL00047960', 'salePrice': 84, 'displayName': 'EL00047960', 'allowedAttributes': '[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]', 'omsAvailableStock': 269, 'productName': 'Pingente Life I Love Mom'}, 'gtmCount': 6, 'addToCartEvent': '08167dd8-9b38-4d26-a168-c2930dabc598'}, {'AL00020500': {'salePriceWithCashDiscount': 0, 'lastInstallment': 59.5, 'ringSize': '15', 'onSale': False, 'weight': 0, 'quantityInstallment': 2, 'disableBoxDiscount': False, 'parentProducts': '[product:AL00020500, product:AL00020515]', 'onlineOnly': False, 'type': 'sku', 'productId': 'AL00020500', 'customAttributes': {}, 'discountable': True, 'modelSymphony': '1000213054', 'availableStock': 0, 'interstateAvailableStock': 0, 'listPrice': 170, 'nonreturnable': False, 'additionalShippingTime': 0, 'skuId': 'AL00020515', 'salePrice': 119, 'displayName': 'AL00020515', 'allowedAttributes': '[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]', 'omsAvailableStock': 0, 'productName': 'Anel Life Trançado '}}].
+10/31/2021 10:35:15 PM: INFO: Server -  send list all products: [{'EL00002652': {'salePriceWithCashDiscount': 0, 'lastInstallment': 60, 'onSale': False, 'weight': 0, 'quantityInstallment': 2, 'disableBoxDiscount': False, 'parentProducts': '[product:EL00002652]', 'onlineOnly': False, 'type': 'sku', 'productId': 'EL00002652', 'customAttributes': {}, 'discountable': True, 'modelSymphony': '1000214536', 'availableStock': 624, 'interstateAvailableStock': 299, 'listPrice': 120, 'nonreturnable': False, 'additionalShippingTime': 0, 'skuId': 'EL00002652', 'salePrice': 120, 'displayName': 'EL00002652', 'allowedAttributes': '[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]', 'omsAvailableStock': 901, 'productName': 'Pingente Life Nossa Senhora Aparecida '}}, {'EL00047960': {'salePriceWithCashDiscount': 0, 'lastInstallment': 84, 'onSale': False, 'weight': 0, 'quantityInstallment': 1, 'disableBoxDiscount': False, 'parentProducts': '[product:EL00047960]', 'onlineOnly': False, 'type': 'sku', 'productId': 'EL00047960', 'customAttributes': {}, 'discountable': True, 'modelSymphony': '1000128464', 'availableStock': 0, 'interstateAvailableStock': 55, 'listPrice': 120, 'nonreturnable': False, 'additionalShippingTime': 0, 'skuId': 'EL00047960', 'salePrice': 84, 'displayName': 'EL00047960', 'allowedAttributes': '[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]', 'omsAvailableStock': 269, 'productName': 'Pingente Life I Love Mom'}, 'gtmCount': 6, 'addToCartEvent': '08167dd8-9b38-4d26-a168-c2930dabc598'}, {'AL00020500': {'salePriceWithCashDiscount': 0, 'lastInstallment': 59.5, 'ringSize': '15', 'onSale': False, 'weight': 0, 'quantityInstallment': 2, 'disableBoxDiscount': False, 'parentProducts': '[product:AL00020500, product:AL00020515]', 'onlineOnly': False, 'type': 'sku', 'productId': 'AL00020500', 'customAttributes': {}, 'discountable': True, 'modelSymphony': '1000213054', 'availableStock': 0, 'interstateAvailableStock': 0, 'listPrice': 170, 'nonreturnable': False, 'additionalShippingTime': 0, 'skuId': 'AL00020515', 'salePrice': 119, 'displayName': 'AL00020515', 'allowedAttributes': '[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]', 'omsAvailableStock': 0, 'productName': 'Anel Life Trançado '}}] to addr: ('127.0.0.1', 59020)
+10/31/2021 11:18:37 PM: INFO: Server - Start thread.
+10/31/2021 11:18:37 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:18:44 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60264)>, addr=('127.0.0.1', 60264)
+10/31/2021 11:18:46 PM: INFO: Server - Receiving message: list
+10/31/2021 11:18:46 PM: INFO: Server - Processing response: list, result: None.
+10/31/2021 11:18:46 PM: INFO: Server -  send list all products: None to addr: ('127.0.0.1', 60264)
+10/31/2021 11:19:01 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60270)>, addr=('127.0.0.1', 60270)
+10/31/2021 11:19:02 PM: INFO: Server - Receiving message: list
+10/31/2021 11:19:02 PM: INFO: Server - Processing response: list, result: None.
+10/31/2021 11:19:02 PM: INFO: Server -  send list all products: None to addr: ('127.0.0.1', 60270)
+10/31/2021 11:21:01 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60284)>, addr=('127.0.0.1', 60284)
+10/31/2021 11:21:02 PM: INFO: Server - Receiving message: list
+10/31/2021 11:21:02 PM: INFO: Server - Processing response: list, result: None.
+10/31/2021 11:21:02 PM: INFO: Server -  send list all products: None to addr: ('127.0.0.1', 60284)
+10/31/2021 11:24:00 PM: INFO: Server - Start thread.
+10/31/2021 11:24:00 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:24:03 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60316)>, addr=('127.0.0.1', 60316)
+10/31/2021 11:24:05 PM: INFO: Server - Receiving message: list
+10/31/2021 11:24:05 PM: ERROR: Server - Fail to receiv message. Error=Product() takes no arguments
+10/31/2021 11:24:51 PM: INFO: Server - Start thread.
+10/31/2021 11:24:51 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:24:51 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:24:54 PM: INFO: Server - Start thread.
+10/31/2021 11:24:54 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:24:54 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:25:14 PM: INFO: Server - Start thread.
+10/31/2021 11:25:14 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:25:17 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60336)>, addr=('127.0.0.1', 60336)
+10/31/2021 11:25:18 PM: INFO: Server - Receiving message: list
+10/31/2021 11:25:18 PM: ERROR: Server - Fail to receiv message. Error=Product() takes no arguments
+10/31/2021 11:28:43 PM: INFO: Server - Start thread.
+10/31/2021 11:28:43 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:28:48 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60408)>, addr=('127.0.0.1', 60408)
+10/31/2021 11:28:49 PM: INFO: Server - Receiving message: list
+10/31/2021 11:28:49 PM: ERROR: Server - Fail to receiv message. Error=Product() takes no arguments
+10/31/2021 11:29:05 PM: INFO: Server - Start thread.
+10/31/2021 11:29:05 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:29:08 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60418)>, addr=('127.0.0.1', 60418)
+10/31/2021 11:29:09 PM: INFO: Server - Receiving message: list
+10/31/2021 11:29:09 PM: ERROR: Server - Fail to receiv message. Error=Product() takes no arguments
+10/31/2021 11:29:22 PM: INFO: Server - Start thread.
+10/31/2021 11:29:22 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:29:22 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:29:23 PM: INFO: Server - Start thread.
+10/31/2021 11:29:23 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:29:23 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:29:24 PM: INFO: Server - Start thread.
+10/31/2021 11:29:24 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:29:24 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:29:25 PM: INFO: Server - Start thread.
+10/31/2021 11:29:25 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:29:25 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:29:25 PM: INFO: Server - Start thread.
+10/31/2021 11:29:25 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:29:25 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:29:28 PM: INFO: Server - Start thread.
+10/31/2021 11:29:28 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:29:28 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:29:29 PM: INFO: Server - Start thread.
+10/31/2021 11:29:29 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:29:29 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:38:54 PM: INFO: Server - Start thread.
+10/31/2021 11:38:54 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:38:57 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60490)>, addr=('127.0.0.1', 60490)
+10/31/2021 11:38:59 PM: INFO: Server - Receiving message: list
+10/31/2021 11:38:59 PM: ERROR: Server - Fail to receiv message. Error=Product() takes no arguments
+10/31/2021 11:39:24 PM: INFO: Server - Start thread.
+10/31/2021 11:39:24 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:39:24 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:39:25 PM: INFO: Server - Start thread.
+10/31/2021 11:39:25 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:39:25 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:39:26 PM: INFO: Server - Start thread.
+10/31/2021 11:39:26 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:39:26 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:42:02 PM: INFO: Server - Start thread.
+10/31/2021 11:42:02 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:42:10 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60542)>, addr=('127.0.0.1', 60542)
+10/31/2021 11:42:12 PM: INFO: Server - Receiving message: list
+10/31/2021 11:42:12 PM: INFO: Server - Processing response: list, result: None.
+10/31/2021 11:42:12 PM: INFO: Server -  send list all products: None to addr: ('127.0.0.1', 60542)
+10/31/2021 11:47:19 PM: INFO: Server - Start thread.
+10/31/2021 11:47:19 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:47:31 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60836)>, addr=('127.0.0.1', 60836)
+10/31/2021 11:47:34 PM: ERROR: Server - Fail to receiv message. Error='utf-8' codec can't decode byte 0xc3 in position 0: invalid continuation byte
+10/31/2021 11:49:49 PM: INFO: Server - Start thread.
+10/31/2021 11:49:49 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:49:52 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60852)>, addr=('127.0.0.1', 60852)
+10/31/2021 11:49:53 PM: INFO: Server - Receiving message: list
+10/31/2021 11:49:53 PM: INFO: Server - Processing response: list, result: None.
+10/31/2021 11:49:53 PM: INFO: Server -  send list all products: None to addr: ('127.0.0.1', 60852)
+10/31/2021 11:51:03 PM: INFO: Server - Start thread.
+10/31/2021 11:51:03 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:51:09 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 60868)>, addr=('127.0.0.1', 60868)
+10/31/2021 11:51:10 PM: INFO: Server - Receiving message: list
+10/31/2021 11:51:10 PM: INFO: Server - Processing response: list, result: None.
+10/31/2021 11:51:10 PM: INFO: Server -  send list all products: None to addr: ('127.0.0.1', 60868)
+10/31/2021 11:56:01 PM: INFO: Server - Start thread.
+10/31/2021 11:56:01 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:56:04 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 33208)>, addr=('127.0.0.1', 33208)
+10/31/2021 11:56:06 PM: INFO: Server - Receiving message: list
+10/31/2021 11:56:06 PM: ERROR: Server - Fail to get product list. Error=descriptor 'append' for 'list' objects doesn't apply to a 'Product' object
+10/31/2021 11:56:06 PM: INFO: Server - Processing response: list, result: typing.List[models.product.Product].
+10/31/2021 11:56:06 PM: INFO: Server -  send list all products: typing.List[models.product.Product] to addr: ('127.0.0.1', 33208)
+10/31/2021 11:56:06 PM: ERROR: Server - Fail to receiv message. Error=[Errno 9] Bad file descriptor
+10/31/2021 11:57:15 PM: INFO: Server - Start thread.
+10/31/2021 11:57:15 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:57:15 PM: ERROR: Server - Error: [Errno 98] Address already in use
+10/31/2021 11:57:16 PM: INFO: Server - Start thread.
+10/31/2021 11:57:16 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+10/31/2021 11:57:22 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 33236)>, addr=('127.0.0.1', 33236)
+10/31/2021 11:57:24 PM: INFO: Server - Receiving message: list
+10/31/2021 11:57:24 PM: ERROR: Server - Fail to get product list. Error=descriptor 'append' for 'list' objects doesn't apply to a 'Product' object
+10/31/2021 11:57:24 PM: INFO: Server - Processing response: list, result is a produt list.
+10/31/2021 11:57:24 PM: INFO: Server -  send list all products: {'_inst': False, '_special': False, '_name': 'List', '__origin__': <class 'list'>, '__args__': (<class 'models.product.Product'>,), '__parameters__': (), '__slots__': None} to addr: ('127.0.0.1', 33236)
+10/31/2021 11:57:24 PM: ERROR: Server - Fail to receiv message. Error=[Errno 9] Bad file descriptor
+11/01/2021 12:00:04 AM: INFO: Server - Start thread.
+11/01/2021 12:00:04 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:00:28 AM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 33856)>, addr=('127.0.0.1', 33856)
+11/01/2021 12:00:29 AM: INFO: Server - Receiving message: list
+11/01/2021 12:00:29 AM: ERROR: Server - Fail to get product list. Error=descriptor 'append' for 'list' objects doesn't apply to a 'Product' object
+11/01/2021 12:00:29 AM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 12:00:29 AM: ERROR: Server - Fail to receiv message. Error=Object of type type is not JSON serializable
+11/01/2021 12:02:11 AM: INFO: Server - Start thread.
+11/01/2021 12:02:11 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:02:13 AM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 34070)>, addr=('127.0.0.1', 34070)
+11/01/2021 12:02:15 AM: INFO: Server - Receiving message: list
+11/01/2021 12:02:15 AM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 12:02:15 AM: ERROR: Server - Fail to receiv message. Error='list' object has no attribute '__dict__'
+11/01/2021 12:03:58 AM: INFO: Server - Start thread.
+11/01/2021 12:03:58 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:04:08 AM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 34268)>, addr=('127.0.0.1', 34268)
+11/01/2021 12:04:09 AM: INFO: Server - Receiving message: list
+11/01/2021 12:04:09 AM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 12:04:09 AM: INFO: Server -  send list all products: [
+  [
+    0,
+    60,
+    false,
+    0,
+    2,
+    false,
+    "[product:EL00002652]",
+    false,
+    "sku",
+    "EL00002652",
+    {},
+    true,
+    "1000214536",
+    624,
+    299,
+    120,
+    false,
+    0,
+    "EL00002652",
+    120,
+    "EL00002652",
+    "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, N\u00famero]",
+    901,
+    "Pingente Life Nossa Senhora Aparecida "
+  ],
+  [
+    0,
+    84,
+    false,
+    0,
+    1,
+    false,
+    "[product:EL00047960]",
+    false,
+    "sku",
+    "EL00047960",
+    {},
+    true,
+    "1000128464",
+    0,
+    55,
+    120,
+    false,
+    0,
+    "EL00047960",
+    84,
+    "EL00047960",
+    "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, N\u00famero]",
+    269,
+    "Pingente Life I Love Mom"
+  ],
+  [
+    0,
+    59.5,
+    "15",
+    false,
+    0,
+    2,
+    false,
+    "[product:AL00020500, product:AL00020515]",
+    false,
+    "sku",
+    "AL00020500",
+    {},
+    true,
+    "1000213054",
+    0,
+    0,
+    170,
+    false,
+    0,
+    "AL00020515",
+    119,
+    "AL00020515",
+    "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, N\u00famero]",
+    0,
+    "Anel Life Tran\u00e7ado "
+  ]
+] to addr: ('127.0.0.1', 34268)
+11/01/2021 12:05:30 AM: INFO: Server - Start thread.
+11/01/2021 12:05:30 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:05:38 AM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 34384)>, addr=('127.0.0.1', 34384)
+11/01/2021 12:05:39 AM: INFO: Server - Receiving message: list
+11/01/2021 12:05:39 AM: ERROR: Server - Fail to get product list. Error='Product' object has no attribute '__dict__'
+11/01/2021 12:05:39 AM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 12:05:39 AM: INFO: Server -  send list all products: [] to addr: ('127.0.0.1', 34384)
+11/01/2021 12:05:39 AM: ERROR: Server - Fail to receiv message. Error=[Errno 9] Bad file descriptor
+11/01/2021 12:06:34 AM: INFO: Server - Start thread.
+11/01/2021 12:06:34 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:06:34 AM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 12:06:35 AM: INFO: Server - Start thread.
+11/01/2021 12:06:35 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:06:35 AM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 12:06:37 AM: INFO: Server - Start thread.
+11/01/2021 12:06:37 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:06:37 AM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 12:06:38 AM: INFO: Server - Start thread.
+11/01/2021 12:06:38 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:06:38 AM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 12:06:38 AM: INFO: Server - Start thread.
+11/01/2021 12:06:38 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:06:38 AM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 12:06:39 AM: INFO: Server - Start thread.
+11/01/2021 12:06:39 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:06:39 AM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 12:06:39 AM: INFO: Server - Start thread.
+11/01/2021 12:06:39 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:06:39 AM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 12:06:40 AM: INFO: Server - Start thread.
+11/01/2021 12:06:40 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:06:40 AM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 12:19:54 AM: INFO: Server - Start thread.
+11/01/2021 12:19:54 AM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 12:20:03 AM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 35298)>, addr=('127.0.0.1', 35298)
+11/01/2021 12:20:04 AM: INFO: Server - Receiving message: list
+11/01/2021 12:20:04 AM: ERROR: Server - Fail to get product list. Error=dump() missing 1 required positional argument: 'fp'
+11/01/2021 12:20:04 AM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 12:20:04 AM: INFO: Server -  send list all products: [] to addr: ('127.0.0.1', 35298)
+11/01/2021 12:20:04 AM: ERROR: Server - Fail to receiv message. Error=[Errno 9] Bad file descriptor
+11/01/2021 12:22:19 AM: ERROR: Server - Fail to get product list. Error=namedtuple() takes 2 positional arguments but 25 were given
+11/01/2021 12:23:17 AM: ERROR: Server - Fail to get product list. Error=namedtuple() takes 2 positional arguments but 25 were given
+11/01/2021 12:23:31 AM: ERROR: Server - Fail to get product list. Error=namedtuple() takes 2 positional arguments but 25 were given
+11/01/2021 12:23:53 AM: ERROR: Server - Fail to get product list. Error=namedtuple() takes 2 positional arguments but 25 were given
+11/01/2021 12:23:59 AM: ERROR: Server - Fail to get product list. Error=namedtuple() takes 2 positional arguments but 25 were given
+11/01/2021 12:24:44 AM: ERROR: Server - Fail to get product list. Error=namedtuple() takes 2 positional arguments but 25 were given
+11/01/2021 08:23:51 PM: ERROR: Server - Fail to get product list. Error=namedtuple() takes 2 positional arguments but 25 were given
+11/01/2021 08:29:43 PM: INFO: Server - Start thread.
+11/01/2021 08:29:43 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:29:49 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 49726)>, addr=('127.0.0.1', 49726)
+11/01/2021 08:29:51 PM: INFO: Server - Receiving message: list
+11/01/2021 08:29:51 PM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 08:29:51 PM: INFO: Server -  send list all products: <generator object ServerMachine.controll_messages.<locals>.<genexpr> at 0x7fb8a1022ba0> to addr: ('127.0.0.1', 49726)
+11/01/2021 08:31:27 PM: INFO: Server - Start thread.
+11/01/2021 08:31:27 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:31:29 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 49748)>, addr=('127.0.0.1', 49748)
+11/01/2021 08:31:31 PM: INFO: Server - Receiving message: list
+11/01/2021 08:31:31 PM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 08:31:31 PM: INFO: Server -  send list all products: <generator object ServerMachine.controll_messages.<locals>.<genexpr> at 0x7f72db2d0c10> to addr: ('127.0.0.1', 49748)
+11/01/2021 08:32:28 PM: INFO: Server - Start thread.
+11/01/2021 08:32:28 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:32:28 PM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 08:32:29 PM: INFO: Server - Start thread.
+11/01/2021 08:32:29 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:32:29 PM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 08:32:30 PM: INFO: Server - Start thread.
+11/01/2021 08:32:30 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:32:30 PM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 08:32:30 PM: INFO: Server - Start thread.
+11/01/2021 08:32:30 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:32:30 PM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 08:32:31 PM: INFO: Server - Start thread.
+11/01/2021 08:32:31 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:32:31 PM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 08:32:32 PM: INFO: Server - Start thread.
+11/01/2021 08:32:32 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:32:32 PM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 08:32:32 PM: INFO: Server - Start thread.
+11/01/2021 08:32:32 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:32:32 PM: ERROR: Server - Error: [Errno 98] Address already in use
+11/01/2021 08:34:22 PM: INFO: Server - Start thread.
+11/01/2021 08:34:22 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:34:41 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 49792)>, addr=('127.0.0.1', 49792)
+11/01/2021 08:34:43 PM: INFO: Server - Receiving message: list
+11/01/2021 08:34:43 PM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 08:34:43 PM: INFO: Server -  send list all products: <generator object ServerMachine.controll_messages.<locals>.<genexpr> at 0x7faddfcc0c10> to addr: ('127.0.0.1', 49792)
+11/01/2021 08:49:44 PM: INFO: Server - Start thread.
+11/01/2021 08:49:44 PM: INFO: Server - Start server in host=127.0.0.1 porta=7300.
+11/01/2021 08:49:50 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 50046)>, addr=('127.0.0.1', 50046)
+11/01/2021 08:49:51 PM: INFO: Server - Receiving message: list
+11/01/2021 08:49:51 PM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 08:49:51 PM: INFO: Server -  send list all products: <generator object ServerMachine.controll_messages.<locals>.<genexpr> at 0x7f4411bc7c10> to addr: ('127.0.0.1', 50046)
+11/01/2021 09:06:06 PM: INFO: Server - conn<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7300), raddr=('127.0.0.1', 50256)>, addr=('127.0.0.1', 50256)
+11/01/2021 09:06:07 PM: INFO: Server - Receiving message: list
+11/01/2021 09:06:07 PM: INFO: Server - Processing response: list, result is a produt list.
+11/01/2021 09:06:07 PM: INFO: Server -  send list all products: <generator object ServerMachine.controll_messages.<locals>.<genexpr> at 0x7f4411bc7d60> to addr: ('127.0.0.1', 50256)
