@@ -2,7 +2,7 @@ import threading, logging, os, time
 from models.machine import Machine
 
 
-logging.basicConfig(format='%(asctime)s: %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filename='logs/server.log', level=logging.DEBUG)
+logging.basicConfig(format='%(asctime)s: %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filename='logs/consult_client.log', level=logging.DEBUG)
 
 TIMEOUT = 2
 MAX_REQUESTS = 15
@@ -46,7 +46,7 @@ class ClientMachine(Machine):
                 self.get_client().send_message(request, port_destination)
                 self.listen_response()
             except: 
-                print('Invalid request.\n')
+                print('Server not found.\n')
             
     def listen_response(self):
         
@@ -62,8 +62,8 @@ def execute_thread(index: int, machine: Machine):
     machine.execute_machine()
 
 if  __name__ == "__main__" :
-    client = ClientMachine('Server', CLIENT_PORT, SERVER_PORT, SERVER_IP)    
+    client = ClientMachine('Consult Client', CLIENT_PORT, SERVER_PORT, SERVER_IP)    
 
-    threadServer = threading.Thread(target=execute_thread, name="Server", args=(0, client))
+    threadServer = threading.Thread(target=execute_thread, name="Client", args=(0, client))
     
     threadServer.start()        

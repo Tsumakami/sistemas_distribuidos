@@ -3,7 +3,7 @@ import threading, logging, os, json
 from typing import List
 from collections import namedtuple
 from models.machine import Machine
-from models.stores import Stores
+from models.product_stores import ProductStores
 
 logging.basicConfig(format='%(asctime)s: %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filename='logs/store_service.log', level=logging.DEBUG)
 CMD_LISTEN_LOG = 'tail -f logs/store_service.log'
@@ -46,15 +46,16 @@ class ServerMachine(Machine):
         json_file = open('DB/stores.json', 'r')
         return json.load(json_file)
 
-    def product_list(self) -> List[Stores]:
+    def product_list(self) -> List[ProductStores]:
         json_db = self.access_db()
 
         product_list = list()
         try:
             for json_product in json_db:
-                product_stores = namedtuple("Stores",  json_product.keys())(*json_product.values())
-                #print("ProductId: ", stores.productId, "\nSkuId", stores.skuId, "\nEstoque Disponível: ", stores.availableStock, "\nListPrice: ", stores.listPrice, "\nSalePrice: ", stores.salePrice, "\nProductName: ", stores.productName, "\nLojas com Estoque: ", stores.cdsWithStock)
-                logging.info(f" ProductId: {product_stores.productId}\n SkuId: {product_stores.skuId}\n Estoque Disponível: {product_stores.availableStock}\n listPrice: {product_stores.listPrice}\n SalePrice: {product_stores.salePrice}\n Nome do Produto: {product_stores.productName}\n Cidades com Estoque: {product_stores.cdsWithStock}\n")
+                product_stores = namedtuple("ProductStores",  json_product.keys())(*json_product.values())
+
+                logging.info(f"{self.name} - ProductId: {product_stores.productId}, SkuId: {product_stores.skuId}, Estoque Disponível: {product_stores.availableStock}, listPrice: {product_stores.listPrice}, SalePrice: {product_stores.salePrice}, Nome do Produto: {product_stores.productName}, Cidades com Estoque: {product_stores.cdsWithStock}")
+
                 product_list.append(product_stores)
         except Exception as e:
             logging.error(f'{self.name} - Fail to get product list. Error={e}')
@@ -62,7 +63,7 @@ class ServerMachine(Machine):
 
         return product_list
 
-    def get_product_by_id(self, productId: str) -> Stores:
+    def get_product_by_id(self, productId: str) -> ProductStores:
     
          try:
              product_store_list = self.product_list()
@@ -103,7 +104,8 @@ class ServerMachine(Machine):
                 conn.send('Are Working...'.encode('utf-8'))
 
             else:
-                print("Invalid search.")
+                logging.warning("Invalid request.")
+                conn.send("Invalid request.".encode('utf-8'))
 
             conn.close()
 
@@ -138,7 +140,7 @@ def execute_thread(index: int, machine: Machine):
     machine.execute_machine()
 
 if  __name__ == "__main__" :
-    server = ServerMachine('Server', SERVER_PORT, 0000, SERVER_IP)
+    server = ServerMachine('Store server', SERVER_PORT, 0000, SERVER_IP)
 
     threadServer = threading.Thread(target=execute_thread, name="Server", args=(0, server))
 

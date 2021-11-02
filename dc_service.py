@@ -105,7 +105,8 @@ class ServerMachine(Machine):
                 conn.send('Are Working...'.encode('utf-8'))
 
             else:
-                print("Invalid search.")
+                logging.warning("Invalid request.")
+                conn.send("Invalid request.".encode('utf-8'))
 
             conn.close()
         
@@ -140,7 +141,7 @@ def execute_thread(index: int, machine: Machine):
     machine.execute_machine()
 
 if  __name__ == "__main__" :
-    server = ServerMachine('Server', SERVER_PORT, 0000, SERVER_IP)    
+    server = ServerMachine('DC Server', SERVER_PORT, 0000, SERVER_IP)    
     
     threadServer = threading.Thread(target=execute_thread, name="Server", args=(0, server))
     

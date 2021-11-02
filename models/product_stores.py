@@ -1,5 +1,5 @@
 from .product import Product
-class Stores(Product):
+class ProductStores(Product):
     cdsWithStock: str
 
     def __init__(self, productId, skuId, displayName,
