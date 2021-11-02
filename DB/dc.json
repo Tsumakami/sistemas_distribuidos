@@ -1,5 +1,5 @@
 [
-    
+
   {
     "salePriceWithCashDiscount": 0,
     "lastInstallment": 60,
@@ -24,7 +24,8 @@
     "displayName": "EL00002652",
     "allowedAttributes": "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]",
     "omsAvailableStock": 901,
-    "productName": "Pingente Life Nossa Senhora Aparecida "
+    "productName": "Pingente Life Nossa Senhora Aparecida",
+    "cdsWithStock": "Erechim, Passo Fundo, Chapeco"
   },
   {
     "salePriceWithCashDiscount": 0,
@@ -50,7 +51,8 @@
     "displayName": "EL00047960",
     "allowedAttributes": "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]",
     "omsAvailableStock": 269,
-    "productName": "Pingente Life I Love Mom"
+    "productName": "Pingente Life I Love Mom",
+    "cdsWithStock": "Erechim"
   },
   {
     "salePriceWithCashDiscount": 0,
@@ -77,6 +79,7 @@
     "displayName": "AL00020515",
     "allowedAttributes": "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]",
     "omsAvailableStock": 0,
-    "productName": "Anel Life Trançado "
+    "productName": "Anel Life Trançado",
+    "cdsWithStock": "Passo Fundo"
   }
 ]
