@@ -13,7 +13,7 @@ MY_PORT = 7380
 SERVER_PORTS = (7300, 7302)
 SERVER_IP = "127.0.0.1"
            
-class SlaveMachine(Machine):
+class ApplicationMachine(Machine):
     product_list_ids: List[str]
     product_list_names: List[str]
     request_names: str
@@ -54,7 +54,6 @@ class SlaveMachine(Machine):
 
         for product in product_list:
             self.product_list_ids.append(product.productId)
-
             
     def listen_response(self):
         resp = self.get_client().client.recv(1024)
@@ -177,9 +176,9 @@ def execute_thread(index: int, machine: Machine):
 
 if  __name__ == "__main__" :
 
-    slave = SlaveMachine('Slave', MY_PORT, SERVER_PORTS, SERVER_IP)
+    application = ApplicationMachine('Slave', MY_PORT, SERVER_PORTS, SERVER_IP)
 
-    threadSlave = threading.Thread(target=execute_thread, name="Slave", args=(1, slave))
+    threadSlave = threading.Thread(target=execute_thread, name="Slave", args=(1, application))
     
     threadSlave.start()
 
