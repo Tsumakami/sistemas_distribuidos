@@ -9,7 +9,7 @@ class Machine():
     client: Client
     server: Server
     name: str
-    slave_port: int
+    slave_port: tuple
     
     def __init__(self, name, port, slave_port, ip):
         self.name = name

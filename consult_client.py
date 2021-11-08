@@ -10,8 +10,8 @@ MAX_EXECUTION = 50
 
 #SERVER_IP = '10.1.2.122'
 SERVER_IP = '127.0.0.1'
-CLIENT_PORT = 7304
-SERVER_PORT = 7300
+MY_PORT = 7304
+SERVER_PORT = 7380
 
 class ClientMachine(Machine):
 
@@ -33,7 +33,7 @@ class ClientMachine(Machine):
         print(message)
 
     def task(self):
-        port_destination = self.slave_port
+        port_destination = self.slave_port[0]
 
         self.init_message()
 
@@ -62,7 +62,7 @@ def execute_thread(index: int, machine: Machine):
     machine.execute_machine()
 
 if  __name__ == "__main__" :
-    client = ClientMachine('Consult Client', CLIENT_PORT, SERVER_PORT, SERVER_IP)    
+    client = ClientMachine('Consult Client', MY_PORT, (SERVER_PORT, None), SERVER_IP)    
 
     threadServer = threading.Thread(target=execute_thread, name="Client", args=(0, client))
     

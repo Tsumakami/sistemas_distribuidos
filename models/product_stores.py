@@ -1,6 +1,6 @@
 from .product import Product
 class ProductStores(Product):
-    cdsWithStock: str
+    cdsWithStock: dict
 
     def __init__(self, productId, skuId, displayName,
         listPrice, salePrice, productName, availableStock, interStateAvailableStock,

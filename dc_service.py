@@ -47,7 +47,12 @@ class ServerMachine(Machine):
 
     def access_db(self) -> json:
         json_file = open('DB/dc.json', 'r')
-        return json.load(json_file)
+        
+        json_result = json.load(json_file)
+        
+        json_file.close()
+
+        return json_result
 
     def list_products(self) -> List[Product]:
         json_db = self.access_db()
@@ -141,7 +146,7 @@ def execute_thread(index: int, machine: Machine):
     machine.execute_machine()
 
 if  __name__ == "__main__" :
-    server = ServerMachine('DC Server', SERVER_PORT, 0000, SERVER_IP)    
+    server = ServerMachine('DC Server', SERVER_PORT, (None, None), SERVER_IP)    
     
     threadServer = threading.Thread(target=execute_thread, name="Server", args=(0, server))
     

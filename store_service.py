@@ -5,7 +5,7 @@ from collections import namedtuple
 from models.machine import Machine
 from models.product_stores import ProductStores
 
-logging.basicConfig(format='%(asctime)s: %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filename='logs/store_service.log', level=logging.DEBUG)
+logging.basicConfig(format='%(asctime)s: %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filename='logs/store_service.log', level=logging.INFO)
 CMD_LISTEN_LOG = 'tail -f logs/store_service.log'
 
 TIMEOUT = 2
@@ -54,7 +54,7 @@ class ServerMachine(Machine):
             for json_product in json_db:
                 product_stores = namedtuple("ProductStores",  json_product.keys())(*json_product.values())
 
-                logging.info(f"{self.name} - ProductId: {product_stores.productId}, SkuId: {product_stores.skuId}, Estoque Disponível: {product_stores.availableStock}, listPrice: {product_stores.listPrice}, SalePrice: {product_stores.salePrice}, Nome do Produto: {product_stores.productName}, Cidades com Estoque: {product_stores.cdsWithStock}")
+                logging.debug(f"{self.name} - ProductId: {product_stores.productId}, SkuId: {product_stores.skuId}, Estoque Disponível: {product_stores.availableStock}, listPrice: {product_stores.listPrice}, SalePrice: {product_stores.salePrice}, Nome do Produto: {product_stores.productName}, Cidades com Estoque: {product_stores.cdsWithStock}")
 
                 product_list.append(product_stores)
         except Exception as e:
@@ -140,7 +140,7 @@ def execute_thread(index: int, machine: Machine):
     machine.execute_machine()
 
 if  __name__ == "__main__" :
-    server = ServerMachine('Store server', SERVER_PORT, 0000, SERVER_IP)
+    server = ServerMachine('Store server', SERVER_PORT, (None, None), SERVER_IP)
 
     threadServer = threading.Thread(target=execute_thread, name="Server", args=(0, server))
 

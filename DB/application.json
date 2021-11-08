@@ -13,23 +13,13 @@
     "productId": "EL00002652",
     "customAttributes": {},
     "discountable": true,
-    "modelSymphony": "1000214536",
-    "availableStock": 624,
-    "interstateAvailableStock": 299,
+    "modelSymphony": "1000214536",    
     "listPrice": 120,
-    "nonreturnable": false,
-    "additionalShippingTime": 0,
     "skuId": "EL00002652",
     "salePrice": 120,
     "displayName": "EL00002652",
     "allowedAttributes": "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]",
-    "omsAvailableStock": 901,
-    "productName": "Pingente Life Nossa Senhora Aparecida",
-    "cdsWithStock": {
-      "Erechim" : 19, 
-      "Passo Fundo": 45, 
-      "Chapeco": 54
-    }
+    "productName": "Pingente Life Nossa Senhora Aparecida"
   },
   {
     "salePriceWithCashDiscount": 0,
@@ -45,20 +35,12 @@
     "customAttributes": {},
     "discountable": true,
     "modelSymphony": "1000128464",
-    "availableStock": 0,
-    "interstateAvailableStock": 55,
     "listPrice": 120,
-    "nonreturnable": false,
-    "additionalShippingTime": 0,
     "skuId": "EL00047960",
     "salePrice": 84,
     "displayName": "EL00047960",
     "allowedAttributes": "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]",
-    "omsAvailableStock": 269,
-    "productName": "Pingente Life I Love Mom",
-    "cdsWithStock": {
-      "Erechim": 10
-    }
+    "productName": "Pingente Life I Love Mom"
   },
   {
     "salePriceWithCashDiscount": 0,
@@ -75,19 +57,11 @@
     "customAttributes": {},
     "discountable": true,
     "modelSymphony": "1000213054",
-    "availableStock": 0,
-    "interstateAvailableStock": 0,
     "listPrice": 170,
-    "nonreturnable": false,
-    "additionalShippingTime": 0,
     "skuId": "AL00020515",
     "salePrice": 119,
     "displayName": "AL00020515",
     "allowedAttributes": "[Comprimento, Espessura, Tamanho, Tam. Pedra, Diametro, Perola, Letra, Número]",
-    "omsAvailableStock": 0,
-    "productName": "Anel Life Trançado",
-    "cdsWithStock": {
-      "Passo Fundo" : 15
-    }
+    "productName": "Anel Life Trançado"
   }
 ]
